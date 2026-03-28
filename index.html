@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ceki Benalkabes</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+<header class="hero">
+    <div class="overlay">
+        <h1>Ceki Benalkabes</h1>
+        <p>Profesyonel Danışmanlık Hizmetleri</p>
+    </div>
+</header>
+
+<section class="about">
+    <h2>Hakkımda</h2>
+    <p>
+        Ceki Benalkabes, bireysel ve kurumsal danışmanlık alanında
+        profesyonel çözümler sunar.
+    </p>
+</section>
+
+<section class="services">
+    <h2>Hizmetler</h2>
+
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-md-4 mb-3">
+                <div class="card p-4">Eğitimler</div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <div class="card p-4">Seminerler</div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <div class="card p-4">Danışmanlık Hizmetleri</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- NEWSLETTER -->
+<section class="newsletter">
+    <div class="newsletter-container">
+
+        <h2>
+            Dönüşüm yolculuğunuzda size ilham verecek içerikler
+            her hafta e-postanıza gelsin.
+        </h2>
+
+        <form action="https://formspree.io/f/mlgogbgo" method="POST" class="newsletter-form">
+
+            <input 
+                type="email" 
+                name="email"
+                placeholder="Mail Adresinizi Girin." 
+                required
+            >
+
+            <button type="submit">
+                ✈ Kayıt Ol!
+            </button>
+
+        </form>
+
+        <div class="newsletter-check">
+            <input type="checkbox" id="privacy1" required>
+            <label for="privacy1">
+                <a href="#">Gizlilik Politikası</a>'nı Kabul Ediyorum.
+            </label>
+        </div>
+
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <div class="container">
+        <div class="row">
+
+            <!-- Sosyal Medya -->
+            <div class="col-md-3 mb-4">
+                <h5>Takip Edin</h5>
+                <p>Bizi sosyal medyada takip edin:</p>
+                <div class="social-icons">
+                    <a href="https://tr.linkedin.com/in/ceki-benalkabes-46119b/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.facebook.com/share/187Ew4QjWd/" target="_blank"><i class="fab fa-facebook-square"></i></a>
+                    <a href="https://www.instagram.com/ceki_benalkabes?igsh=aWRjbzRhcnhwa2xs/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <!-- Adres -->
+            <div class="col-md-3 mb-4">
+                <h5>Adres</h5>
+                <p>Bağdat Caddesi / Kadıköy</p>
+                <p>Mail: <a href="mailto:cekibenalkabes@gmail.com">cekibenalkabes@gmail.com</a></p>
+                <p>Tel: <a href="tel:">05332111417</a></p>
+            </div>
+
+            <!-- Sayfalar -->
+            <div class="col-md-3 mb-4">
+                <h5>Sayfalar</h5>
+                <p>Anasayfa</p>
+                <p>Hizmetler</p>
+                <p>Hakkında</p>
+                <p>Blog</p>
+               
+            </div>
+
+            <!-- Footer Newsletter -->
+            <div class="col-md-3 mb-4">
+                <h5>Haber Bülteni</h5>
+
+                <form action="https://formspree.io/f/mlgogbgo" method="POST">
+
+                    <input 
+                        type="email" 
+                        name="email"
+                        placeholder="Mail Adresinizi Girin." 
+                        required
+                    >
+
+                    <div class="checkbox">
+                        <input type="checkbox" id="privacy2" required>
+                        <label for="privacy2">
+                            <a href="#">Gizlilik Politikası</a>'nı Kabul Ediyorum.
+                        </label>
+                    </div>
+
+                    <button type="submit">Gönder</button>
+
+                </form>
+            </div>
+
+        </div>
+
+        <p class="text-center mt-4">
+            © 2026 Ceki Benalkabes. Tüm hakları saklıdır.
+        </p>
+    </div>
+</footer>
+
+<!-- SCROLL BUTON -->
+<button id="scrollTopBtn">
+    <i class="fas fa-arrow-up"></i>
+</button>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Scroll Script -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const btn = document.getElementById("scrollTopBtn");
+
+    window.addEventListener("scroll", function () {
+        if (window.scrollY > 200) {
+            btn.style.display = "block";
+        } else {
+            btn.style.display = "none";
+        }
+    });
+
+    btn.addEventListener("click", function () {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    });
+});
+</script>
+
+</body>
+</html>
